@@ -1,27 +1,27 @@
+Feature: US001 Background Usage
 
-@All
-Feature: Amazon Search
+  Background: Ortak Adimlar
+    Given kullanici amazon anasayfasina gider
 
-  @gp1
+
+
+
   Scenario: TC01 kullanici amazonda Nutella aratir
 
-    Given kullanici amazon anasayfasina gider
     Then kullanici Nutella icin arama yapar
     And sonuclarin Nutella icerdigini test eder
 
 
-  @gp1
   Scenario: TC02 kullanici amazonda Selenium aratir
 
-    Given kullanici amazon anasayfasina gider
     Then kullanici Selenium icin arama yapar
     And  sonuclarin Selenium icerdigini test eder
-    And sayfayi kapatir
 
-  @gp2
+
+
   Scenario: TC03 kullanici amazonda iphone aratir
 
-    Given kullanici amazon anasayfasina gider
     Then kullanici iphone icin arama yapar
     And sonuclarin iphone icerdigini test eder
     And sayfayi kapatir
+

@@ -36,7 +36,7 @@ public class AmazonStepDefinition {
 
     @Then("kullanici Selenium icin arama yapar")
     public void kullaniciSeleniumIcinAramaYapar() {
-        amazonPage.searchBox.sendKeys("Selenium");
+        amazonPage.searchBox.sendKeys("Selenium" + Keys.ENTER);
     }
 
     @And("sonuclarin Selenium icerdigini test eder")
@@ -48,7 +48,7 @@ public class AmazonStepDefinition {
 
     @Then("kullanici iphone icin arama yapar")
     public void kullaniciIphoneIcinAramaYapar() {
-        amazonPage.searchBox.sendKeys("iphone");
+        amazonPage.searchBox.sendKeys("iphone" + Keys.ENTER);
     }
 
     @And("sonuclarin iphone icerdigini test eder")
