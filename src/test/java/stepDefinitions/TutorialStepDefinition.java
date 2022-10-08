@@ -61,12 +61,7 @@ public class TutorialStepDefinition {
     @And("sepetteki isimleri dogrular")
     public void sepettekiIsimleriDogrular() {
 
-        List<WebElement> listelik = new ArrayList<>();
 
-
-
-
-        for (WebElement each: )
     }
 
 
