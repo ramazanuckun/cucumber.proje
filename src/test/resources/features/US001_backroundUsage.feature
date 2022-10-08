@@ -1,3 +1,5 @@
+@Background
+
 Feature: US001 Background Usage
 
   Background: Ortak Adimlar
