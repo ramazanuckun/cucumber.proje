@@ -5,16 +5,15 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import pages.AmazonPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class amazonStepDefinition {
+public class AmazonStepDefinition {
 
     AmazonPage amazonPage = new AmazonPage();
-    @Given("kullanici amazon anasayfasinda")
-    public void kullaniciAmazonAnasayfasinda() {
+    @Given("kullanici amazon anasayfasina gider")
+    public void kullaniciAmazonAnasayfasinaGider() {
         Driver.getDriver().get(ConfigReader.getProperty("amazonURL"));
     }
 
@@ -25,9 +24,9 @@ public class amazonStepDefinition {
 
     @And("sonuclarin Nutella icerdigini test eder")
     public void sonuclarinNutellaIcerdiginiTestEder() {
-        String arananKelime="Nutella";
-        String actualAramaSonucStr= amazonPage.searchResultWE.getText();
-        Assert.assertTrue(actualAramaSonucStr.contains(arananKelime));
+        String expectedWord="Nutella";
+        String actualWord=amazonPage.searchResultWE.getText();
+        Assert.assertTrue(actualWord.contains(expectedWord));
     }
 
     @And("sayfayi kapatir")
@@ -37,26 +36,25 @@ public class amazonStepDefinition {
 
     @Then("kullanici Selenium icin arama yapar")
     public void kullaniciSeleniumIcinAramaYapar() {
-        amazonPage.searchBox.sendKeys("Selenium" + Keys.ENTER);
+        amazonPage.searchBox.sendKeys("Selenium");
     }
 
     @And("sonuclarin Selenium icerdigini test eder")
     public void sonuclarinSeleniumIcerdiginiTestEder() {
-        String arananKelime="Selenium";
-        String actualAramaSonucStr= amazonPage.searchResultWE.getText();
-        Assert.assertTrue(actualAramaSonucStr.contains(arananKelime));
+        String expectedWord="Selenium";
+        String actualWord=amazonPage.searchResultWE.getText();
+        Assert.assertTrue(actualWord.contains(expectedWord));
     }
 
     @Then("kullanici iphone icin arama yapar")
     public void kullaniciIphoneIcinAramaYapar() {
-        amazonPage.searchBox.sendKeys("iphone" + Keys.ENTER);
+        amazonPage.searchBox.sendKeys("iphone");
     }
 
     @And("sonuclarin iphone icerdigini test eder")
     public void sonuclarinIphoneIcerdiginiTestEder() {
-        String arananKelime="iphone";
-        String actualAramaSonucStr= amazonPage.searchResultWE.getText();
-        Assert.assertTrue(actualAramaSonucStr.contains(arananKelime));
+        String expectedWord="iphone";
+        String actualWord=amazonPage.searchResultWE.getText();
+        Assert.assertTrue(actualWord.contains(expectedWord));
     }
-
 }
