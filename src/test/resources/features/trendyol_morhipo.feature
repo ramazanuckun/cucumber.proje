@@ -10,6 +10,7 @@ Feature: Trendyol Search
 
 
   Scenario: US002 kullanici Morhipo sitesinde makas aratir
+
     Given kullanici google a gider
     Then kullanici google da Morhipo u aratir
     Then kullanici Morhipo ya girer
@@ -18,5 +19,6 @@ Feature: Trendyol Search
 
 
   Scenario: US003 kullanici makas sayilarini karsilastirir
+
     Given kullanici makas sayisi fazla olan sayfayi kapatir
     Then kullanici makas sayisi az olan sayfayi kapatir

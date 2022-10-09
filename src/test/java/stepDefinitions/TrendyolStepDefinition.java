@@ -3,10 +3,13 @@ package stepDefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import utilities.ConfigReader;
+import utilities.Driver;
 
 public class TrendyolStepDefinition {
     @Given("kullanici google a gider")
     public void kullaniciGoogleAGider() {
+        Driver.getDriver().get(ConfigReader.getProperty("googleURL"));
     }
 
     @Then("kullanici google da Trendyol u aratir")
