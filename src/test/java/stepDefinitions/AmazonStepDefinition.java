@@ -57,4 +57,13 @@ public class AmazonStepDefinition {
         String actualWord=amazonPage.searchResultWE.getText();
         Assert.assertTrue(actualWord.contains(expectedWord));
     }
+
+    @Then("kullanici {string} icin arama yapar")
+    public void kullaniciIcinAramaYapar(String searchWord) {
+        amazonPage.searchBox.sendKeys(searchWord,Keys.ENTER);
+    }
+
+    @And("sonuclarin {string} icerdigini test eder")
+    public void sonuclarinIcerdiginiTestEder(String arg0) {
+    }
 }
