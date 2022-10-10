@@ -14,4 +14,11 @@ public class GooglePage {
 
     @FindBy (xpath = "//*[@class='gLFyf gsfi']")
     public WebElement googleSearch;
+
+    @FindBy (xpath = "//*[@class='CCgQ5 vCa9Yd QfkTvb MUxGbd v0nnCb']")
+    public WebElement googleFirstRow;
+
+    @FindBy (xpath = "//*[@class='LC20lb MBeuO DKV0Md']")
+    public WebElement googleSecondRow;
+
 }

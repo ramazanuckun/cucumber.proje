@@ -2,6 +2,7 @@ package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -72,4 +73,9 @@ public class Driver {
             driver = null;
         }
     }
+
+    public static void tabHandle() {
+        driver.switchTo().newWindow(WindowType.TAB);
+    }
+
 }

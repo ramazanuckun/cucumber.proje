@@ -5,16 +5,16 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class TrendyolPage {
+public class MorhipoPage {
 
-    public TrendyolPage() {
-
+    public MorhipoPage() {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(xpath  = "//*[@class='vQI670rJ']")
+    @FindBy (css = "#pw-search-input")
     public WebElement searchBox;
 
-    @FindBy(xpath = "//div[@class='dscrptn']")
+    @FindBy (xpath = "//*[@id='total-product-count']")
     public WebElement resultTextWE;
+
 }
