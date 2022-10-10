@@ -105,6 +105,12 @@ public class Trendyol_MorhipoStepDefinition {
 
     @And("kullanici makas sayisi az olan sayfayi kapatir")
     public void kullaniciMakasSayisiAzOlanSayfayiKapatir() throws AWTException {
+       /*
+       WINDOWS TA BU CALISIYOR
+        Robot robot = new Robot();
+        robot.keyPress(KeyEvent.VK_ALT);
+        robot.keyPress(KeyEvent.VK_F4);
+        */
         Driver.quitDriver();
     }
 }
