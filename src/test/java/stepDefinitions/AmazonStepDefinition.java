@@ -80,7 +80,7 @@ public class AmazonStepDefinition {
         Assert.assertTrue(actualUrl.contains(searchUrl));
     }
 
-    @Then("kullanici {int} saniye bekler\"")
+    @Then("kullanici {int} saniye bekler")
     public void kullaniciSaniyeBekler(int waiting) {
         try {
             Thread.sleep(waiting*1000);
