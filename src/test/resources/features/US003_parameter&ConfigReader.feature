@@ -1,6 +1,7 @@
 Feature: Parametre Kullanimi
   Scenario: Parametre kullaniminda ConfigReader Kullanimi
     Given kullanici "amazonURL" sayfasina gider
+    Then kullanici 3 saniye bekler"
     When url'nin "amazon" icerdigini test eder
     And sayfayi kapatir
 

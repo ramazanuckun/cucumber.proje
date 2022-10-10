@@ -79,4 +79,13 @@ public class AmazonStepDefinition {
         String actualUrl = Driver.getDriver().getCurrentUrl();
         Assert.assertTrue(actualUrl.contains(searchUrl));
     }
+
+    @Then("kullanici {int} saniye bekler\"")
+    public void kullaniciSaniyeBekler(int waiting) {
+        try {
+            Thread.sleep(waiting*1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
