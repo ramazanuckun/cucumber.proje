@@ -1,5 +1,6 @@
 Feature: US002 Parametre Kullanimi
 
+  @parameter
   Scenario: TC01 Kullanici
 
     Given kullanici amazon anasayfasina gider

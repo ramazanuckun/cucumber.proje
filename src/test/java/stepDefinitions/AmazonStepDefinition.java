@@ -64,6 +64,7 @@ public class AmazonStepDefinition {
     }
 
     @And("sonuclarin {string} icerdigini test eder")
-    public void sonuclarinIcerdiginiTestEder(String arg0) {
+    public void sonuclarinIcerdiginiTestEder(String searchWord) {
+        Assert.assertTrue(amazonPage.searchResultWE.getText().contains(searchWord));
     }
 }
