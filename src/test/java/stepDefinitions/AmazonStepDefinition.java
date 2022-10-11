@@ -88,4 +88,10 @@ public class AmazonStepDefinition {
             throw new RuntimeException(e);
         }
     }
+
+
+    @And("sonuclarin \"<istenenKelimeKontrol>' icerdigini test eder")
+    public void sonuclarinIstenenKelimeKontrolIcerdiginiTestEder(String searcWordCheck) throws Throwable {
+        Assert.assertTrue(amazonPage.searchResultWE.getText().contains(searcWordCheck));
+    }
 }
