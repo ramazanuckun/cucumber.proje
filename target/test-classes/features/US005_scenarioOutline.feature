@@ -11,7 +11,7 @@ Feature: US006 kullanici amazonda istedigi kelimeleri aratir
       | nutella       |nutella               |
       | selenium       |selenium              |
       | sql  |sql |
-      | book |book |
+
 
 
 
