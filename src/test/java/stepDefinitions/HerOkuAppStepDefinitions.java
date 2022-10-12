@@ -1,6 +1,8 @@
 package stepDefinitions;
 
 import io.cucumber.java.en.And;
+import org.apache.hc.core5.util.Asserts;
+import org.junit.Assert;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.DataTablesPage;
@@ -38,6 +40,7 @@ public class HerOkuAppStepDefinitions {
 
     @And("Delete butonunun gorunmedigini test edin")
     public void deleteButonununGorunmediginiTestEdin() {
-        assert ! herOkuAppPage.deleteElement.isDisplayed();
+//  assert ! herOkuAppPage.deleteElement.isDisplayed();
+        Assert.assertFalse(herOkuAppPage.deleteElement.isSelected());
     }
 }

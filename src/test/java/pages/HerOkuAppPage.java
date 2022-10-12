@@ -15,6 +15,7 @@ public class HerOkuAppPage {
     @FindBy(xpath = "//*[@onclick='addElement()']")
     public WebElement addElement;
 
-    @FindBy(xpath = "//*[text()='Delete']")
+ //   @FindBy(xpath = "//*[text()='Delete']")
+    @FindBy(xpath = "//*[@id='elements']")
     public WebElement deleteElement;
 }
