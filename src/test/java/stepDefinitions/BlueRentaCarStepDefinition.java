@@ -39,4 +39,17 @@ public class BlueRentaCarStepDefinition {
     public void sayfayaGirisYapilamadiginiKontrolEder() {
         Assert.assertTrue(blueRentaCarPage.loginButton.isDisplayed());
     }
+
+
+    @And("{string} username girer")
+    public void usernameGirer(String arg0) {
+    }
+
+    @And("{string} gecersiz password girer")
+    public void gecersizPasswordGirer(String arg0) {
+    }
+
+    @And("Login butonuna basar")
+    public void loginButonunaBasar() {
+    }
 }
