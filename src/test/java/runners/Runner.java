@@ -7,10 +7,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin={"html:target/cucumber-reports.html"},   // sadece Runner dan calistirilir
         features = "src/test/resources/features",
         glue = "stepDefinitions", //stepDefinitions class'inin yolunu aldip buraya attik
         // isminede glue(yapistirici) dedik
-        tags ="@gp5",         // Runner class'ndan hangisini calistirmak istersek buraya
+        tags ="@bunu",         // Runner class'ndan hangisini calistirmak istersek buraya
         // birden fazla grup çalıstıracaksak "@gp3 or @gp1" yazarız
         dryRun = false       // eksik olan adimlari olusturmasi icin
 )
