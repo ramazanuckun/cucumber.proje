@@ -1,3 +1,5 @@
+@raporlar
+
 Feature: US006 kullanici amazonda istedigi kelimeleri aratir
 
   Scenario Outline: TC01 Kullanici istedigi kelimeleri aratir
@@ -10,7 +12,7 @@ Feature: US006 kullanici amazonda istedigi kelimeleri aratir
       | istenenKelime | istenenKelimeKontrol |
       | nutella       |nutella               |
       | selenium       |selenium              |
-      | sql  |sql |
+      | sql  |sql1 |
 
 
 

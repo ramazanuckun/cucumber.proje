@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="20.654">
+    <testcase classname="US006 kullanici amazonda istedigi kelimeleri aratir" name="TC01 Kullanici istedigi kelimeleri aratir" time="7.963">
+        <system-out><![CDATA[Given kullanici amazon anasayfasina gider...................................passed
+Then kullanici "nutella" icin arama yapar...................................passed
+And sonuclarin "nutella" icerdigini test eder...............................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US006 kullanici amazonda istedigi kelimeleri aratir" name="TC01 Kullanici istedigi kelimeleri aratir 2" time="6.563">
+        <system-out><![CDATA[Given kullanici amazon anasayfasina gider...................................passed
+Then kullanici "selenium" icin arama yapar..................................passed
+And sonuclarin "selenium" icerdigini test eder..............................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="US006 kullanici amazonda istedigi kelimeleri aratir" name="TC01 Kullanici istedigi kelimeleri aratir 3" time="6.031">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given kullanici amazon anasayfasina gider...................................passed
+Then kullanici "sql" icin arama yapar.......................................passed
+And sonuclarin "sql1" icerdigini test eder..................................failed
+And sayfayi kapatir.........................................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinitions.AmazonStepDefinition.sonuclarinIcerdiginiTestEder(AmazonStepDefinition.java:69)
+	at ✽.sonuclarin "sql1" icerdigini test eder(file:///Users/orhan/IdeaProjects/Cucumber_Mac/src/test/resources/features/US005_scenarioOutline.feature:9)
+]]></failure>
+    </testcase>
+</testsuite>
