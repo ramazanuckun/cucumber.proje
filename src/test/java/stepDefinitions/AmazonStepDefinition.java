@@ -94,4 +94,9 @@ public class AmazonStepDefinition {
     public void sonuclarinIstenenKelimeKontrolIcerdiginiTestEder(String searcWordCheck) throws Throwable {
         Assert.assertTrue(amazonPage.searchResultWE.getText().contains(searcWordCheck));
     }
+
+    @And("sayfalari kapatir")
+    public void sayfalariKapatir() {
+        Driver.quitDriver();
+    }
 }

@@ -17,4 +17,4 @@ Feature: US013 Class Work
     And kullanici ilk sayfaya geri doner
     When kullanici 3 saniye bekler
     And kullanici ilk sayfaya donuldugunu test eder
-    And sayfayi kapatir
+    And sayfalari kapatir
