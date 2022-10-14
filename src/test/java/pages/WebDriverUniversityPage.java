@@ -20,4 +20,7 @@ public class WebDriverUniversityPage {
 
     @FindBy (xpath = "//*[@id='password']")
     public WebElement password;
+
+    @FindBy (xpath = "//*[@id='login-button']")
+    public WebElement loginButton;
 }
