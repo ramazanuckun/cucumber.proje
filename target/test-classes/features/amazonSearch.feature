@@ -10,7 +10,7 @@ Feature: Amazon Search
     And sonuclarin Nutella icerdigini test eder
 
 
-  @gp1
+
   Scenario: TC02 kullanici amazonda Selenium aratir
 
     Given kullanici amazon anasayfasina gider
@@ -18,7 +18,7 @@ Feature: Amazon Search
     And  sonuclarin Selenium icerdigini test eder
     And sayfayi kapatir
 
-  @gp2
+
   Scenario: TC03 kullanici amazonda iphone aratir
 
     Given kullanici amazon anasayfasina gider
