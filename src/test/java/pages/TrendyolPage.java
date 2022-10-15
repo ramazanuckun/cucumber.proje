@@ -17,4 +17,6 @@ public class TrendyolPage {
 
     @FindBy(xpath = "//div[@class='dscrptn']")
     public WebElement resultTextWE;
+
+
 }

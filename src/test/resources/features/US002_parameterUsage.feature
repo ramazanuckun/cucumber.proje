@@ -35,6 +35,8 @@ Feature: US002 Parametre Kullanimi
     And sonuclarin "SQL" icerdigini test eder
     And sayfayi kapatir
 
+
+
      # Feature dosyasında parametreli arama yaptığımızda ""(tırnak) içine aldığımız string değeri stepDefinitionda
 #Bir kere parametreli method oluşturur ve yeni bir arama yapmak istediğimizde
 #Tekrar method oluşturmadan feature dosyasından ""(tırnak) içinde belirttiğimiz string ifadeyi değiştirmemiz
