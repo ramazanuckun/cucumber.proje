@@ -11,3 +11,4 @@ Feature: US014 Kullanici Giris Testi
     And kullanici Register butonuna basar
     Then kullanicinin hesap olusturuldugunu dogrulayin
     Then hesap olustugunu dogrulayin
+    And sayfayi kapatir

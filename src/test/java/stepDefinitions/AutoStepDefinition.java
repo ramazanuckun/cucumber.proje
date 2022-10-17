@@ -3,8 +3,10 @@ package stepDefinitions;
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.By;
 import pages.AutomationPracticePage;
 import utilities.ConfigReader;
+import utilities.Driver;
 
 public class AutoStepDefinition {
 
@@ -18,7 +20,7 @@ public class AutoStepDefinition {
 
     @And("user Create and account bölümüne email adresi girer")
     public void userCreateAndAccountBölümüneEmailAdresiGirer() {
-        autoPracticePage.emailCreateLink.sendKeys(ConfigReader.getProperty("catkatzegato"));
+        autoPracticePage.emailCreateLink.sendKeys(faker.internet().emailAddress());
     }
 
     @And("Create an Account butonuna basar")
@@ -30,17 +32,21 @@ public class AutoStepDefinition {
     public void kullaniciKisiselBilgileriniVeIletisimBilgileriniGirer() {
         autoPracticePage.genderButton.click();
         autoPracticePage.firstName1Box.sendKeys(faker.name().firstName());
+        String name = autoPracticePage.firstName1Box.getText().toString();
         autoPracticePage.lastName1Box.sendKeys(faker.name().lastName());
         autoPracticePage.passwordBox.sendKeys(faker.internet().password());
         autoPracticePage.days.sendKeys("5");
-        autoPracticePage.months.sendKeys("10");
+        autoPracticePage.months.sendKeys("October");
         autoPracticePage.years.sendKeys("1980");
-        autoPracticePage.addressBox.sendKeys(faker.address().streetAddress());
+        autoPracticePage.addressBox.sendKeys(faker.address().fullAddress());
         autoPracticePage.cityBox.sendKeys(faker.address().city());
         autoPracticePage.idStateBox.sendKeys(faker.address().state());
         autoPracticePage.postcodeBox.sendKeys(faker.address().zipCode());
         autoPracticePage.phoneMobileBox.sendKeys(faker.phoneNumber().cellPhone());
         autoPracticePage.registerButton.click();
+        assert autoPracticePage.myAccountText.isDisplayed();
+        assert autoPracticePage.myAccountName.equals(name);
+
     }
 
     @And("kullanici Register butonuna basar")

@@ -65,4 +65,10 @@ public class AutomationPracticePage {
 
     @FindBy (xpath = "//*[text()='Register']")
     public WebElement registerButton;
+
+    @FindBy (css = ".navigation_page")
+    public WebElement myAccountText;
+
+    @FindBy (css = ".account")
+    public WebElement myAccountName;
 }
