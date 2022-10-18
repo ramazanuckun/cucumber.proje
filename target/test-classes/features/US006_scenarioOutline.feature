@@ -1,5 +1,6 @@
 Feature: USA006 Scenario Outline Kullanimi
 
+  # Scenario Outline: ile Frame Workumuza hibrit(behavior and data) ozelligi kazandirmis oluyoruz
   Scenario Outline: TC01 ConfigReader ile Scenario Outline Kullanimi
     Given kullanici "<searchUrl>" sayfasina gider
     Then kullanici 3 saniye bekler
