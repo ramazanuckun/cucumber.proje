@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="15.004">
-    <testcase classname="Parametre Kullanimi" name="Parametre kullaniminda ConfigReader Kullanimi" time="7.179">
-        <system-out><![CDATA[Given kullanici "facebookURL" sayfasina gider...............................passed
-Then kullanici 2 saniye bekler..............................................passed
-When url'nin "facebook" icerdigini test eder................................passed
-And sayfayi kapatir.........................................................passed
-]]></system-out>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="0.473">
+    <testcase classname="Parametre Kullanimi" name="Parametre kullaniminda ConfigReader Kullanimi" time="0.02">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given kullanici "facebookURL" sayfasina gider...............................undefined
+Then kullanici 2 saniye bekler..............................................skipped
+When url'nin "facebook" icerdigini test eder................................skipped
+And sayfayi kapatir.........................................................skipped
+]]></failure>
     </testcase>
-    <testcase classname="Parametre Kullanimi" name="Parametre kullaniminda ConfigReader Kullanimi 2" time="7.703">
-        <system-out><![CDATA[Given kullanici "hepsiburadaURL" sayfasina gider............................passed
-Then kullanici 2 saniye bekler..............................................passed
-When url'nin "hepsiburada" icerdigini test eder.............................passed
-And sayfayi kapatir.........................................................passed
-]]></system-out>
+    <testcase classname="Parametre Kullanimi" name="Parametre kullaniminda ConfigReader Kullanimi 2" time="0.002">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given kullanici "hepsiburadaURL" sayfasina gider............................undefined
+Then kullanici 2 saniye bekler..............................................skipped
+When url'nin "hepsiburada" icerdigini test eder.............................skipped
+And sayfayi kapatir.........................................................skipped
+]]></failure>
     </testcase>
 </testsuite>

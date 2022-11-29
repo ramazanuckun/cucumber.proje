@@ -13,9 +13,10 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "stepDefinitions", //stepDefinitions class'inin yolunu aldip buraya attik
         // isminede glue(yapistirici) dedik
-        tags ="@US15",         // Runner class'ndan hangisini calistirmak istersek buraya
+     tags ="  @DBTest",         // Runner class'ndan hangisini calistirmak istersek buraya
         // birden fazla grup çalıstıracaksak "@gp3 or @gp1" yazarız
-        dryRun = false       // eksik olan adimlari olusturmasi icin
+        dryRun =false
+        // eksik olan adimlari olusturmasi icin
 )
 
 public class Runner {

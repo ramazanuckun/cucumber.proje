@@ -11,6 +11,7 @@ import org.openqa.selenium.safari.SafariDriver;
 
 import java.time.Duration;
 
+
 public class Driver {
 
     private Driver() {  // Default constructor'u devre dısı bırakmak yani SingletonPattern yapmak icin kullanılıyor
